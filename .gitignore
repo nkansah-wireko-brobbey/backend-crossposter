@@ -1,0 +1,74 @@
+# .gitignore for Django Social Cross-Posting App
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+### Django ###
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media/
+/staticfiles/
+__pycache__/
+.env
+.env.local
+.env.*.local
+
+### Celery ###
+celerybeat-schedule
+celerybeat.pid
+
+
+### IDE ###
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+
+### Testing ###
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+### Database migrations (optional) ###
+*/migrations/*.py
+!*/migrations/__init__.py
+
+### API Keys ###
+*.key
+*.pem
+*.cert
+*.secret
+
+### Docker ###
+docker-compose.override.yml
+.env.docker
